@@ -1,0 +1,36 @@
+{
+  "name": "espeak-ng",
+  "version": "1.0.0",
+  "description": "eSpeak-NG speech synthesizer, compiled to JavasScript + WASM",
+  "type": "module",
+  "main": "dist/espeak-ng.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "npm run clean && npx mkdirp dist/ && npm run copy-files",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/* dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianmarmour/espeak-ng.js.git"
+  },
+  "keywords": [
+    "espeak",
+    "espeak-ng",
+    "speech",
+    "speech-synthesizer"
+  ],
+  "author": "Ian Armour <ianmarmour@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ianmarmour/espeak-ng.js/issues"
+  },
+  "homepage": "https://github.com/ianmarmour/espeak-ng.js#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.5"
+  }
+}
