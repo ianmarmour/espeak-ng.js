@@ -1,6 +1,6 @@
 {
   "name": "espeak-ng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "eSpeak-NG speech synthesizer, compiled to JavasScript + WASM",
   "type": "module",
   "main": "dist/espeak-ng.js",
