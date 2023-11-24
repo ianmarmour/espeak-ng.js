@@ -32,8 +32,25 @@ const phenoms = espeak.FS.readFile("generated", { encoding: "utf8" });
 
 ### Requirements
 
+#### System Libraries
+
 ```
-latest emscripten
+sudo apt-get install make autoconf automake libtool pkg-config
+sudo apt-get install gcc
+sudo apt-get install libsonic-dev
+sudo apt-get install ronn
+sudo apt-get install kramdown
+sudo apt-get install libpcaudio-dev
+```
+
+#### Latest Emscripten
+
+```
+git clone https://github.com/emscripten-core/emsdk.git
+cd emsdk
+./emsdk install latest
+./emsdk activate latest
+source ./emsdk_env.sh
 ```
 
 ### Compilation
